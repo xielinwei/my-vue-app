@@ -21,7 +21,7 @@ jobs:
         run: npm install -g pnpm@latest
 
       - name: 安装依赖
-        run: pnpm install --frozen-lockfil
+        run: pnpm install --no-frozen-lockfile
 
       - name: 项目打包
         run: pnpm run build
