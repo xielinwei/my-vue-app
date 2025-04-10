@@ -6,6 +6,12 @@ on:
   push:
     branches: ["main"]
 
+# 设置 GITHUB_TOKEN 的权限，以允许部署到 GitHub Pages。
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   # 单次执行的工作
   pnpm-build:
