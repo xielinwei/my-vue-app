@@ -17,11 +17,12 @@ jobs:
         uses: actions/setup-node@v4
         with: 
           node-version: 20
+          cache: 'pnpm'
       - name: 安装 pnpm
         run: npm install -g pnpm@latest
 
       - name: 安装依赖
-        run: pnpm install --no-frozen-lockfile
+        run: pnpm install
 
       - name: 项目打包
         run: pnpm run build
