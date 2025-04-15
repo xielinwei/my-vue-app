@@ -32,13 +32,15 @@ jobs:
       - name: 项目打包
         run: pnpm run build
 
-      - name: Setup Pages
+      - name: 配置环境
         uses: actions/configure-pages@v4
-      - name: Upload artifact
+
+      - name: 上传构建产物
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload dist folder
           path: './dist'
-      - name: Deploy to GitHub Pages
+
+      - name: 部署到 GitHub Pages
         uses: actions/deploy-pages@v4
 
