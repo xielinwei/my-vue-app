@@ -9,5 +9,9 @@ export default defineConfig({
     alias: {
       '@': '/src'
     }
+  },
+  build: {
+    assetsDir: 'assets', // 可选：自定义资源目录
+    manifest: true // 可选：生成资源清单
   }
 })

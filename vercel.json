@@ -1,3 +1,17 @@
 {
- 
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/my-vue-app"
+    },
+    {
+      "source": "/my-vue-app/assets/(.*)",
+      "destination": "/assets/$1"
+    },
+    {
+      "source": "/my-vue-app/(.*)",
+      "destination": "/$1"
+    }
+  ]
 }
