@@ -2,7 +2,7 @@
   "redirects": [
     {
       "source": "/",
-      "destination": "/your-subpath",
+      "destination": "/my-vue-app",
       "permanent": false
     }
   ]
