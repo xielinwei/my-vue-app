@@ -1,9 +1,3 @@
 {
-  "redirects": [
-    {
-      "source": "/",
-      "destination": "/my-vue-app",
-      "permanent": false
-    }
-  ]
+ 
 }
